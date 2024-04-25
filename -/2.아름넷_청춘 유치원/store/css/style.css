@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+.skipnav a{position: absolute; top:-70px; left:0; right:0; height: 60px; line-height: 58px; background: #fff; color: #000; text-align: center; border-bottom: 1px solid #ddd;}
+.skipnav a:focus,
+.skipnav a:active{top:0;}
+
+/* 가운데영역 */
+.container{width: 1080px; margin: 0 auto;}
+
+/* header */
+#header{height: 167px; border-bottom: 1px solid #8c8c8c; }
+#header_top{border-bottom: 1px solid #ededed;} 
+#header .header_top{height: 111px; display: flex; align-items: center; justify-content: space-between;}
+#header .login_wrap{display: flex; gap: 0 27px;}
+#header .login_wrap li a{padding-left: 23px; position: relative; display: block; font-size: 14px; font-weight: 700; color: #111; white-space: nowrap; transform: skew(-0.03deg);}
+#header .login_wrap li a:hover{text-decoration: underline;}
+#header .login_wrap li a::before{content: ''; position: absolute; top:-2px; left:0;}
+#header .login_wrap li a.login::before{width: 13px; height: 16px; background: url(../images/common/login.png)no-repeat;}
+#header .login_wrap li a.join::before{width: 14px; height: 17px; background: url(../images/common/join.png)no-repeat;}
+#header .search_wrap{position: relative;}
+#header .search_wrap input{padding-left: 10px; width: 365px; height: 47px; border: 1px solid #f68c25; border-radius: 50px; font-size: 18px;}
+#header .search_wrap .search_btn{position: absolute; top: 0; bottom: 0; right:0; width: 77px; height: 100%; background: url(../images/common/search.png)no-repeat center; cursor: pointer;}
+#header .header_bottom{height: 55px; display: flex; justify-content: space-between ;}
+#header .sitemap_wrap button{width: 57px; height: 55px; border: 1px solid #ededed; border-width: 0 1px; background: url(../images/common/sitemap.png)no-repeat center; cursor: pointer;}
+#header nav .depth1{height: 55px; display: flex; align-items: center; gap: 0 90px;}
+#header nav .depth1 h1 a{display: block; font-size: 19px; color: #111; font-weight: 700;}
+#header .link_wrap{display: flex; align-items: center; justify-content: center; width: 206px; height: 55px; border: 1px solid #ededed; border-width: 0 1px;}
+#header .link_wrap a{display: block; padding: 17px 0; width: 100%; height: 100%;}
+#header .link_wrap a img{display: block; margin: auto;}
+
+/* footer */
+#footer{padding: 58px 0 0; height: 273px; background-color: #404247; line-height: 1; font-family: 'NotoSansKR', sans-serif;}
+#footer .footer{position: relative;}
+#footer .link_wrap{margin-bottom: 47px; display: flex; gap: 0 52px;}
+#footer .link_wrap li a{display: block; font-size: 16px; color: #fff; font-weight: 500;}
+#footer .link_wrap li a.youtube{position: relative; padding-left: 26px;}
+#footer .link_wrap li a.youtube::before{content: ''; position: absolute; top: 50%; transform: translateY(-50%); left:0; width: 20px; height: 15px; background: url(../images/common/youtube.png)no-repeat;}
+
+#footer address{font-style: normal;}
+#footer address ul{width: 706px; display: flex; flex-wrap: wrap; gap: 0 30px;}
+#footer address ul li{position: relative; margin-bottom: 11px; font-size: 14px; font-weight: 300; line-height: 24px; color: #dbdbdc; }
+#footer address ul li::before{content: ''; position: absolute; top:7px; right:-16px; width: 1px; height: 14px; background-color: #565758;}
+#footer address ul li:last-child:before{display: none;}
+#footer address span{display: block; margin-top: 5px; font-size: 12px; color: #8c8e91; font-weight: 500;}
+#footer .logo{position: absolute; top:17px; right:0;}
+#footer .logo img{display: block;}

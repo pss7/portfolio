@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 800;
+    src: url(fonts/NanumSquareEB.woff2) format('woff2'),
+        url(fonts/NanumSquareEB.woff) format('woff'),
+        url(fonts/NanumSquareEB.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/NanumSquareB.woff2) format('woff2'),
+        url(fonts/NanumSquareB.woff) format('woff'),
+        url(fonts/NanumSquareB.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/NanumSquareR.woff2) format('woff2'),
+        url(fonts/NanumSquareR.woff) format('woff'),
+        url(fonts/NanumSquareR.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(fonts/NotoSansKR-Medium.woff2) format('woff2'),
+        url(fonts/NotoSansKR-Medium.woff) format('woff'),
+        url(fonts/NotoSansKR-Medium.otf) format('opentype');
+}
+
