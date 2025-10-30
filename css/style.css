@@ -27,7 +27,6 @@ ul.skipnav li a:active{top:100px;}
 }
 
 /* 공통 */
-section{}
 section h2{position: relative; padding-bottom: 80px; margin-bottom: 100px; text-align: center; font-family: 'BlackHanSans-Regular'; font-size: 38px; color: #000; text-transform:uppercase; }
 section h2::after{position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);display: block; content: ""; width: 30px; height: 1px; background: #000;}
 

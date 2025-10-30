@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 
   /* 타이핑 효과 */
   var typingBool = false;
@@ -31,14 +31,14 @@ $(function() {
 
         clearInterval(tyInt);
 
-        setTimeout(function() {
+        setTimeout(function () {
           tyInt = setInterval(typing, 110);
         }, 1000);
       } else if (liIndex == liLength - 1) {
 
         clearInterval(tyInt);
 
-        setTimeout(function() {
+        setTimeout(function () {
 
           typingBool = false;
           liIndex = 0;
@@ -56,7 +56,7 @@ $(function() {
   }
 
   /* 메뉴 누르면 해당 영역으로 이동3 */
-  $('.header a').on('click', function(e) {
+  $('.header a').on('click', function (e) {
     var index = $(this).attr('href');
     var secTop = $(index).offset().top;
     $("html, body").animate({
@@ -65,7 +65,7 @@ $(function() {
   });
 
   /* 메뉴 누르면 해당 영역으로 이동3 -mobile- */
-  $('.header .mobile_menu_main_nav a').on('click', function(e) {
+  $('.header .mobile_menu_main_nav a').on('click', function (e) {
     var index = $(this).attr('href');
     var secTop = $(index).offset().top;
     $("html, body").animate({
@@ -74,7 +74,7 @@ $(function() {
   });
 
   /* 클릭 시 스크롤 내리기 */
-  $(".click").click(function(event) {
+  $(".click").click(function (event) {
     event.preventDefault();
     $('html,body').animate({
       scrollTop: $(this.hash).offset().top - 60
@@ -82,7 +82,7 @@ $(function() {
   });
 
   /* 스크롤 이벤트 플러그인 */
-  $(function() {
+  $(function () {
     AOS.init({
       disable: false,
       startEvent: 'DOMContentLoaded',
@@ -93,7 +93,7 @@ $(function() {
       debounceDelay: 50,
       throttleDelay: 99,
       offset: 120,
-      delay: 400,
+      delay: 200,
       duration: 1500,
       easing: 'ease',
       once: false,
@@ -105,7 +105,7 @@ $(function() {
   /* tab */
   $('.portfolio_content').hide();
   $('.portfolio_content').first().show();
-  $('.portfolio_tab li').click(function() {
+  $('.portfolio_tab li').click(function () {
     $('.portfolio_tab li').children().removeClass('active');
     $(this).children().addClass('active');
     var Idx = $(this).index();
@@ -115,16 +115,16 @@ $(function() {
   });
 
   /* 상단으로 이동 */
-  $('#top').click(function() {
+  $('#top').click(function () {
     $('html, body').animate({
-        scrollTop: 0
-      },
+      scrollTop: 0
+    },
       1000);
     return false;
   });
 
   /* 스크롤 시 top 버튼 */
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('#top').fadeIn();
     } else {
